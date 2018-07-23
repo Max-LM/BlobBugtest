@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<smc:specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns:smc="http://www.ccsds.org/schema/ServiceSchema">
+    <smc:area name="Test" number="5" version="1">
+        <smc:service name="TestService" number="8">
+            <smc:capabilitySet number="1">
+                <smc:requestIP name="testRequest" number="1" supportInReplay="false" comment="request response test">
+                    <smc:messages>
+                        <smc:request>
+                            <smc:type area="MAL" name="Blob"/>
+                        </smc:request>
+                        <smc:response>
+                            <smc:type area="MAL" name="Blob" />
+                        </smc:response>
+                    </smc:messages>
+                </smc:requestIP>
+            </smc:capabilitySet>
+        </smc:service>
+    </smc:area>
+</smc:specification>
